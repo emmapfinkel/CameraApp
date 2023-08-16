@@ -11,6 +11,7 @@
 		BDC776D22A210307001E44EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC776D12A210307001E44EE /* ContentView.swift */; };
 		BDC776D42A210308001E44EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC776D32A210308001E44EE /* Assets.xcassets */; };
 		BDC776D72A210308001E44EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC776D62A210308001E44EE /* Preview Assets.xcassets */; };
+		BDC776DF2A210604001E44EE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC776DE2A210604001E44EE /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		BDC776D12A210307001E44EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDC776D32A210308001E44EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC776D62A210308001E44EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDC776DD2A210352001E44EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BDC776DE2A210604001E44EE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		BDC776CE2A210307001E44EE /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				BDC776DD2A210352001E44EE /* Info.plist */,
 				BDC776CF2A210307001E44EE /* CameraAppApp.swift */,
 				BDC776D12A210307001E44EE /* ContentView.swift */,
+				BDC776DE2A210604001E44EE /* ImagePicker.swift */,
 				BDC776D32A210308001E44EE /* Assets.xcassets */,
 				BDC776D52A210308001E44EE /* Preview Content */,
 			);
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC776DF2A210604001E44EE /* ImagePicker.swift in Sources */,
 				BDC776D22A210307001E44EE /* ContentView.swift in Sources */,
 				BDC776D02A210307001E44EE /* CameraAppApp.swift in Sources */,
 			);
@@ -270,6 +276,8 @@
 				DEVELOPMENT_TEAM = CRX566HC3L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera needed to take photos. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +307,8 @@
 				DEVELOPMENT_TEAM = CRX566HC3L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera needed to take photos. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
